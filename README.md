@@ -14,7 +14,7 @@ This repository contains a script to automate the installation and setup of a Ne
 First, clone this repository to your local machine:
 
 ```
-git clone https://github.com/your_username/network3-setup.git
+git clone https://github.com/IamCaptainPepe/network3-setup.git
 cd network3-setup
 ```
 
