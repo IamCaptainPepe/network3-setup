@@ -10,7 +10,7 @@ tar -xvf ubuntu-node-v2.1.0.tar
 
 
 # Переход в директорию с приложением
-cd ubuntu-node
+cd network3-setup/ubuntu-node
 
 # Запуск приложения узла
 sudo bash manager.sh up
