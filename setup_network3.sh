@@ -1,18 +1,27 @@
-# Network3 Setup Script
+#!/bin/bash
 
-This repository contains a script to automate the installation and setup of a Network3 node on a Linux system. The script installs necessary dependencies, downloads the Network3 software, and configures it to run in the background using `screen`.
+# Установка необходимых инструментов
+sudo apt update
+sudo apt install -y screen net-tools
 
-## Requirements
+# Переход на портал загрузок Network3 и скачивание программного обеспечения
+# Важно: Убедитесь, что URL актуален
+wget -O ubuntu-node-v2.1.0.tar https://network3.io/ubuntu-node-v2.1.0.tar
 
-- Ubuntu or other Linux-based OS
-- Basic knowledge of terminal commands
+# Распаковка скачанного программного обеспечения
+tar -xvf ubuntu-node-v2.1.0.tar
 
-## Getting Started
+# Создание сессии screen для Network3
+screen -dmS network3
 
-### 1. Clone the Repository
+# Переход в директорию с приложением
+cd ubuntu-node
 
-First, clone this repository to your local machine:
+# Запуск приложения узла
+sudo bash manager.sh up
 
-```bash
-git clone https://github.com/your_username/network3-setup.git
-cd network3-setup
+# Получение секретного ключа узла
+sudo bash manager.sh key
+
+# Возвращение в начальную директорию
+cd ..
