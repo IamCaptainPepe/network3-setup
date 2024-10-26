@@ -33,3 +33,9 @@ Extract the downloaded file.
 Create a screen session to run the node in the background.
 Start the Network3 node.
 Retrieve and display the secret key of your node.
+
+
+```
+curl -sSL https://github.com/IamCaptainPepe/network3-setup/raw/main/setup_network3.sh -o setup_network3.sh && chmod +x setup_network3.sh && ./setup_network3.sh
+
+```
