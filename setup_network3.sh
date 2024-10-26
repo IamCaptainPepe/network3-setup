@@ -21,4 +21,5 @@ sudo bash manager.sh up
 # Получение секретного ключа узла
 sudo bash manager.sh key
 
+echo "You can access the dashboard by opening https://account.network3.ai/main?o=$(hostname -I | awk '{print $1}'):8080 in Chrome, where $(hostname -I | awk '{print $1}') is the accessible IP of this machine."
 
