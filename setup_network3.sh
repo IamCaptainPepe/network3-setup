@@ -6,10 +6,10 @@ sudo apt install -y screen net-tools
 
 # Переход на портал загрузок Network3 и скачивание программного обеспечения
 # Важно: Убедитесь, что URL актуален
-wget -O ubuntu-node-v2.1.0.tar https://network3.io/ubuntu-node-v2.1.0.tar
+wget -O ubuntu-node-v2.1.1.tar https://network3.io/ubuntu-node-v2.1.1.tar
 
 # Распаковка скачанного программного обеспечения
-tar -xvf ubuntu-node-v2.1.0.tar
+tar -xvf ubuntu-node-v2.1.1.tar
 
 
 # Переход в директорию с приложением
